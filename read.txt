@@ -1,0 +1,80 @@
+==============================
+       Atbash Cipher
+   Python Implementation
+==============================
+
+Description:
+------------
+This is a simple Python program that implements the Atbash Cipher — a classic monoalphabetic cipher where each letter of the alphabet is replaced with its reverse counterpart.
+
+Encryption Logic:
+A ↔ Z
+B ↔ Y
+C ↔ X
+...
+Z ↔ A
+
+Since the Atbash Cipher is symmetrical, the same function is used for both encryption and decryption.
+
+-------------------
+Program Features:
+-------------------
+- Accepts user input as plaintext
+- Encrypts using Atbash Cipher logic
+- Decrypts automatically using the same logic
+- Supports both uppercase and lowercase letters
+- Preserves all non-letter characters (spaces, punctuation, numbers, etc.)
+- Simple and beginner-friendly (no external libraries required)
+
+-------------------
+How to Use:
+-------------------
+1. Clone or download the script to your computer.
+
+2. Open a terminal (Command Prompt or PowerShell) and navigate to the script folder.
+
+3. Run the script using Python 3:
+   python atbash_cipher.py
+
+4. Enter your plaintext message when prompted.
+
+5. View the encrypted and decrypted results.
+
+-------------------
+Example Run:
+-------------------
+Atbash Cipher
+Enter plaintext: Hello, World!
+
+Encrypted (Atbash): Svool, Dliow!
+Decrypted (Original): Hello, World!
+
+-------------------
+How It Works:
+-------------------
+- For uppercase letters (A-Z):
+  Encrypted = chr(65 + (25 - (ord(char) - 65)))
+
+- For lowercase letters (a-z):
+  Encrypted = chr(97 + (25 - (ord(char) - 97)))
+
+- All other characters are left unchanged.
+
+-------------------
+Requirements:
+-------------------
+- Python 3.x
+- No additional libraries required
+
+-------------------
+Author & Contact:
+-------------------
+Created by: Jumaity Habibullah
+GitHub: https://github.com/jumaityhabibullah
+Email: jumaityhabibullah@gmail.com
+
+-------------------
+License:
+-------------------
+This project is open source and available under the MIT License.
+Feel free to use and modify as needed.
